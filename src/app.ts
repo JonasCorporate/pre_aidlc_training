@@ -1,5 +1,7 @@
 import express, { Request, Response } from 'express';
+import { apiReference } from '@scalar/express-api-reference';
 import ordersRouter from './routes/orders';
+import openApiSpec from './openapi';
 
 const app = express();
 
@@ -16,5 +18,7 @@ app.get('/health', (_req: Request, res: Response) => {
 });
 
 app.use('/orders', ordersRouter);
+
+app.use('/docs', apiReference({ content: openApiSpec }));
 
 export default app;

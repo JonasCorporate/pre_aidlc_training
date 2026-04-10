@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jonasCorporate-Ai/pre_aidlc_training#readme",
   "dependencies": {
+    "@scalar/express-api-reference": "^0.9.7",
     "better-sqlite3": "^12.8.0",
     "express": "^5.2.1"
   },

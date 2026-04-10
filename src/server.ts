@@ -11,4 +11,5 @@ app.listen(PORT, () => {
   console.log(`  GET /        -> health check`);
   console.log(`  GET /health  -> health check`);
   console.log(`  GET /orders  -> list all orders`);
+  console.log(`  GET /docs    -> Scalar API docs`);
 });
