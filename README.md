@@ -23,6 +23,12 @@ git clone https://github.com/JonasCorporate/pre_aidlc_training
 <img src="guides/pic002-cloning.png" alt="alt text" width="670" />
 
 - [AI DLC Workshop repo](https://github.com/awslabs/aidlc-workflows?tab=readme-ov-file#platform-specific-setup). For the moment you don't have to clone this, but in your future work you will need part of this repo as your setup. The `.aidlc-rule-details` that you see in our project has been copied from this repo. From time to time one can pull fresh version and make sure we are using latest version of the workflow. 
+- Various stages of progression will be snapshotted with tags. Present initial stage (which is also `HEAD` of the `main` branch) is for instance tagged as `v0.0-initial`. If at any point you feel your process has diverged, you can always recover either leaning on 
+  - Your own version control. Hence frequent commits recommended. or 
+  - Using one of our tags. This will put you in the desired state, but obviously lose any customizations peculiar to choices you've made. Reseting to tag can be executed (for instance) by:
+  ```powerShell
+    git reset --hard v0.0-initial
+    ``` 
 
 ## Validation gate:
 
