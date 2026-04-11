@@ -6,6 +6,10 @@ Pre-training exercise for AI DLC workshops.
 
 A purpose of this pre AIDLC training is to do a quick run of a full iteration of the AIDLC process prior to the actual workshop. The application under development is a trivial shopping API under Node/Express. This training will also help with setup on a local laptop, even though prerequisites are minimal. This pre-training may be redundant if you already have experience with the AIDLC process or if you are confident your local setup is already in place.
 
+## Companion video guide
+
+Progression of this process together with some additional insights have been recorded in [a companion video guide](https://www.example.com). If you find it helpful, please see video guide before starting respective section, starting from [0: setup](https://www.example.com).
+
 ## Prerequisites
 - [Node.js](https://nodejs.org/en/download/current) installed on your local machine. This is for sample app, which is a Node/Express API.
 - A code editor of your choice (typically [Visual Studio Code](https://code.visualstudio.com/))
