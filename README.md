@@ -52,3 +52,42 @@ Watch [1: initiation and reverse engineering](https://jonassoftware-my.sharepoin
 ### 1.2 (Optional): Review AI DLC platform markdowns
 
 It will help to review the markdowns in the `.aidlc-rule-details` folder. For now in [common](./.aidlc-rule-details/common) folder. Most helpful is `process-overview` (with Mermaid diagram). 
+
+### 1.3 Workspace detection
+
+Agent guides us through process
+
+> using `ai dlc`, what is the first step?
+
+From earlier review we do expect to get a suggestion `Workspace detection`. once suggested, prompt the agent carry it out. "using ai dlc" in prompt is a trigger word that guides agent to use AWS process. Eventually in a session with developed context agent will know to use them with or without trigger phrase. 
+
+Once agent is done with detection step notice two files: `aidlc-state.md` and `audit.md` created. These files make AI DOC process stateful and transferrable from one machine to another. Please review these files and push commit them. 
+
+### 1.4 Reverse Engineering
+
+Again, let's let agent guide us. Prompt:
+
+> using `ai dlc`, what is the next step?
+
+Agent will suggest `reverse engineering`, to which we respond with confirmation to proceed.
+
+You will notice artifacts of RE generated in aidlc-docs. Please review, possibly adjust and commit these. These files is a good place to take control of technical stack of your project, document prior and target stack. 
+
+To get an idea of actual app vs above spec, can:
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000/docs](http://localhost:3000/docs) in browser and test existing functionality in Scalar.
+
+Validation:
+- `aidlc-state.md` and `audit.md` present and indicating progression. 
+- `RE` spec present in `aidlc-docs\inception\reverse-engineering`
+
+Completion of this step is tagged as `v1.0_RE_complete`.
+
+## 2. Requirements, user stories, personas
+
+
