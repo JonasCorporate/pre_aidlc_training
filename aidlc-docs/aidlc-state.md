@@ -1,0 +1,36 @@
+# AI-DLC State Tracking
+
+## Project Information
+- **Project Type**: Brownfield
+- **Start Date**: 2026-04-14T01:21:09Z
+- **Current Stage**: INCEPTION - Workspace Detection
+
+## Workspace State
+- **Existing Code**: Yes
+- **Programming Languages**: TypeScript
+- **Build System**: npm / TypeScript compiler (tsc)
+- **Project Structure**: Monolith (Express.js REST API with SQLite)
+- **Reverse Engineering Needed**: Yes
+- **Workspace Root**: C:/Users/GioSh/code/pre_aidlc_training
+
+## Code Location Rules
+- **Application Code**: Workspace root (NEVER in aidlc-docs/)
+- **Documentation**: aidlc-docs/ only
+- **Structure patterns**: See code-generation.md Critical Rules
+
+## Extension Configuration
+- **Security Baseline**: Pending opt-in (to be decided in Requirements Analysis)
+- **Property-Based Testing**: Pending opt-in (to be decided in Requirements Analysis)
+
+## Stage Progress
+| Stage                 | Status    | Notes                                      |
+|-----------------------|-----------|--------------------------------------------|
+| Workspace Detection   | COMPLETED | Brownfield detected, no prior RE artifacts |
+| Reverse Engineering   | PENDING   | Next stage                                 |
+| Requirements Analysis | NOT STARTED |                                          |
+| User Stories          | NOT STARTED |                                          |
+| Workflow Planning     | NOT STARTED |                                          |
+| Application Design    | NOT STARTED |                                          |
+| Units Generation      | NOT STARTED |                                          |
+| Code Generation       | NOT STARTED |                                          |
+| Build and Test        | NOT STARTED |                                          |
