@@ -10,7 +10,9 @@ A purpose of this pre AIDLC training is to do a quick run of a full iteration of
 
 ### Companion video guide
 
-Progression of this process together with some additional insights have been recorded in [a companion video guide](https://jonassoftware-my.sharepoint.com/:f:/p/giorgi_shonia/IgCvYX8RBAngRJs0TtQM1sBRAWtzDBzdlgu0t-TezeKNais?e=s6Jbd0). If you find it helpful, please see video guide before starting respective section, starting from [0: setup](https://jonassoftware-my.sharepoint.com/:v:/p/giorgi_shonia/IQCiM56t03IcRY9N5bTX7ai7AVkxJ5J45cWGDL_IrBlpnZ4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NdOx7m).
+Progression of this project together with some additional insights have been recorded in [a companion video guide](https://jonassoftware.sharepoint.com/sites/AIatJonas/AIDLC%20PreTraining%20Material/Forms/AllItems.aspx). Video guides ideally should be followed with hands on execution. It's possible to work without videos with this readme alone, or even without any instructions, just following agents guidance of AWS AI DLC workflow.
+
+Video for this part: `pre_aidlc_v0_setup`
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/en/download/current) installed on your local machine. This is for sample app, which is a Node/Express API.
@@ -47,7 +49,7 @@ Validation and gates is a also a concept extensively used in AI DLC. We'll have 
 
 ### 1.1 Video guide (optional)
 
-Watch [1: initiation and reverse engineering](https://jonassoftware-my.sharepoint.com/:v:/p/giorgi_shonia/IQCiM56t03IcRY9N5bTX7ai7AVkxJ5J45cWGDL_IrBlpnZ4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NdOx7m) video for this section. Among other things is covers `vibe-coding` vs `ai-dlc` distinction. 
+Video guide: `pre_aidlc_v1_init.mp4`
 
 ### 1.2 (Optional): Review AI DLC platform markdowns
 
@@ -90,4 +92,24 @@ Completion of this step is tagged as `v1.0_RE_complete`.
 
 ## 2. Requirements, user stories, personas
 
+Video guide for this step: `pre_aidlc_v2_inception`
 
+Once agent completes pevious step, a markdown for requirements review will be generated. Most likely it will be questions, before we will get actual `requirements.md`. Given non-deterministic nature of AI and also possibly due to drift in previous answers and contaxt some variation in output and exact steps is possible. However overall spec output should be equivalent. Key artifacts are `requirements.md` and possibly markdowns for user stories. 
+
+At some point AI will ask questions. Please either review markdown file with questions inline, or ask agent to go through those and interview you ineractively in console.
+
+Once happy with requirements, proceed to the next step, which should outline execution plan and units agents will be workin on. Each unit is unit of work for coding agent and deliverable of code, which typically should be available for valid deployment. 
+
+Tag of this step as `v2.0_inception_done`.
+
+Validation:
+- `requirements.md` present in `aidlc-docs\inception\requirements`
+- Markdown on execution plan (eg `execution-plan.md`), with user stories grouped in units. In our case chances are there will be no user stores (`requirements.md` is enough), and there will only be one unit of execution. 
+
+## 3. Construction, code generation
+
+Video guide for this step: `pre_aidlc_v3_construction`.
+
+Essentially follow `approve, proceed` agent guided process. After code generation some outstanding issues are possible. If that happens, agent should be able to fix it. Once running, you should see new CRUD ops in Scalar. 
+
+As wrapping up, review idea for upcoming in-person workshop. Ideally something that is simple enough to let concentrate on AI DLC learning process, but also something that can contribute to eventual business solution. 
